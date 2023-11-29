@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #330033; /* Dark violet background color */
+    color: #fff;
+}
+
+#playButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Center the playButton */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%; /* Adjust the width as needed */
+}
+
+#playButton img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.songName, .name, div > p {
+    margin: 0;
+    color: #fff;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.controls svg {
+    fill: #fff;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#playtime-bar {
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background for progress bar */
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#playtime-progress {
+    height: 100%;
+    background-color: #2ecc71; /* Green color for progress */
+    width: 0; /* Initial width is 0 */
+}
+
+#lyrics-and-list {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#lyrics {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with a dark tint */
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+#song-list {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with a dark tint */
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC - OnlineShop4DVD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/music.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="/path/to/your/logo.png" alt="OnlineShop4DVD" height="30">
+          </a>
+          <!-- Responsive Navbar Toggler -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Trang chủ
+                </a>
+              </li>
+              <!-- Games Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Games </a>
+                <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+                  <a class="dropdown-item" href="/action-games">Action</a>
+                  <a class="dropdown-item" href="/rpg-games">Simulation</a>
+                </div>
+              </li>
+              <!-- Phim Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="phimDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Phim </a>
+                <div class="dropdown-menu" aria-labelledby="phimDropdown">
+                  <a class="dropdown-item" href="/action-movies">Action</a>
+                  <a class="dropdown-item" href="/drama-movies">Drama</a>
+                </div>
+              </li>
+              <!-- Album Dropdown Menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="albumDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Album </a>
+                <div class="dropdown-menu" aria-labelledby="albumDropdown">
+                  <a class="dropdown-item" href="/rock-albums">Rock</a>
+                  <a class="dropdown-item" href="/pop-albums">Pop</a>
+                  <a class="dropdown-item" href="/vpop-albums">VPop</a>
+                </div>
+              </li>
+            </ul>
+            <!-- Navbar Buttons -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="music-player">
+      <div id="playButton">
+        <img src="link o day" alt="Song Image">
+        <div class="container">
+            <p class="songName">#22</p>
+            <a class="name">Dolu Kadehi Ters Tut</a>
+            <div>
+                <p>2:16</p>
+                <span></span>
+                <p>3:31</p>
+            </div>
+            <div class="controls" id="musicControls">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16">
+                    <path d="M13 2.5L5 7.119V3H3v10h2V8.881l8 4.619z"></path>
+                </svg>
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16" class="play-btn" id="playPauseButton">
+                    <path d="M4.018 14L14.41 8 4.018 2z"></path>
+                </svg>
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 16 16">
+                    <path d="M11 3v4.119L3 2.5v11l8-4.619V13h2V3z"></path>
+                </svg>
+            </div>
+            <div id="playtime-bar">
+                <div id="playtime-progress"></div>
+            </div>
+            <div class="action-buttons">
+                <button id="volumeButton">Volume</button>
+                <button id="loopButton">Loop</button>
+                <button id="favoritesButton">Add to Favorites</button>
+            </div>
+        </div>
+    </div>
+
+      <div id="lyrics-and-list">
+          <div id="lyrics">
+              <h2>Song Lyrics</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          </div>
+          <div id="song-list">
+              <h2>Other Songs</h2>
+              <ul>
+                  <li><a href="/music/id=1"> Song 1</a></li>
+                  <li><a href="/music/id=2"> Song 2</a></li>
+                  <li><a href="/music/id=3"> Song 3</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <script>
+          const playPauseButton = document.getElementById('playPauseButton');
+          const audio = new Audio('YOUR_AUDIO_FILE_URL');
+          const playtimeProgress = document.getElementById('playtime-progress');
+
+          let isPlaying = false;
+
+          playPauseButton.addEventListener('click', () => {
+              if (isPlaying) {
+                  audio.pause();
+              } else {
+                  audio.play();
+              }
+              isPlaying = !isPlaying;
+          });
+
+          audio.addEventListener('timeupdate', () => {
+              const progressPercentage = (audio.currentTime / audio.duration) * 100;
+              playtimeProgress.style.width = `${progressPercentage}%`;
+          });
+
+          const volumeButton = document.getElementById('volumeButton');
+          const loopButton = document.getElementById('loopButton');
+          const favoritesButton = document.getElementById('favoritesButton');
+
+          volumeButton.addEventListener('click', () => {
+              // Chức năng cho volume
+          });
+
+          loopButton.addEventListener('click', () => {
+              // Chức năng cho vòng lặp
+          });
+
+          favoritesButton.addEventListener('click', () => {
+              // Chức năng thêm vào favorites
+          });
+      </script>
+    </div>
+</body>
+</html>
