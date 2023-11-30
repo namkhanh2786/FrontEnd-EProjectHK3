@@ -3,19 +3,75 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #330033; /* Dark violet background color */
+    background-color: #330033;
     color: #fff;
+}
+
+.navbar {
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.navbar-brand img {
+    height: 30px; /* Adjust height as needed */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3ca0e7;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.dropdown-item {
+    color: #333; /* Adjust color as needed */
+    transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    color: #3ca0e7;
+}
+
+.navbar-nav {
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-dark .navbar-toggler:hover {
+    background-color: #fff;
 }
 
 #playButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto; /* Center the playButton */
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     overflow: hidden;
-    width: 70%; /* Adjust the width as needed */
+    width: 70%;
 }
 
 #playButton img {
@@ -28,8 +84,6 @@ body {
 .container {
     flex: 1;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 }
@@ -55,41 +109,161 @@ body {
 }
 
 #playtime-bar {
-    background-color: rgba(255, 255, 255, 0.3); /* Transparent background for progress bar */
+    background-color: rgba(75, 243, 9, 0.3);
     height: 10px;
     border-radius: 5px;
     margin-top: 20px;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 
 #playtime-progress {
     height: 100%;
-    background-color: #2ecc71; /* Green color for progress */
-    width: 0; /* Initial width is 0 */
+    background-color: #2ecc71;
+    width: 0;
 }
 
 #lyrics-and-list {
-    display: flex;
-    flex: 1;
-    padding: 20px;
-    justify-content: space-between;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 #lyrics {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with a dark tint */
-    border-radius: 10px;
-    padding: 20px;
-    margin-right: 10px;
+  flex: 1;
+  max-height: 450px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px; /* Add margin at the bottom for spacing between lyrics and song list on mobile */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: pre-line;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#lyrics h2 {
+  padding-top: 50rem; /* Adjust padding as needed */
+  font-size: 24px;
+}
+
+#lyrics p {
+  margin: 0;
+}
+
+/* Scrollbar styles */
+#lyrics::-webkit-scrollbar {
+  width: 10px;
+}
+
+#lyrics::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+#lyrics::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #song-list {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with a dark tint */
-    border-radius: 10px;
-    padding: 20px;
-    margin-left: 10px;
+  flex: 1;
 }
+
+#song-list ul li {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#song-list ul li .badge {
+  margin-left: auto;
+  background-color: gold;
+  color: #333;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  margin-right: 1rem; /* Adjusted margin-right */
+}
+
+#song-list ul li a {
+  text-decoration: none;
+  color: aqua;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#song-list ul li a:hover {
+  text-decoration: none;
+  color: #1a1a1a;
+  background-color: aqua;
+  box-shadow: 0 0 10px aqua;
+  padding: 2px;
+}
+
+#song-list h2 {
+  color: #fff;
+}
+
+#song-list ul li img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem; /* Adjusted margin-right */
+  border-radius: 50%;
+}
+
+#song-list ul li .singer {
+  color: #f8f8f8;
+  margin-right: 1rem; /* Adjusted margin-right */
+  margin-left: 1em; /* Adjusted margin-left */
+}
+
+#song-list ul {
+  max-height: 400px;
+  overflow-y: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#song-list ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+#song-list ul::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+#song-list ul::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.premium {
+  background-color: gold;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  #lyrics {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  #song-list {
+    flex: 0 0 100%;
+  }
+}
+
 
 ul {
     list-style-type: none;
@@ -102,20 +276,21 @@ ul li {
 
 .action-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .action-buttons button {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+    background-color: rgba(0, 0, 0, 0.7);
     border: none;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 5px;
 }
 
 .action-buttons button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
