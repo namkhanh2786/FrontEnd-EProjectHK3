@@ -133,8 +133,8 @@ var AmazingAudioPlatforms = {
                 this.$image.appendTo(this.playerwrapper);
                 this.$image.css({
                     width: this.options.imagefullwidth ?
-                        "100%;" : this.options.imagewidth + "px",
-                    height: this.options.imageheight + "px",
+                        "100%;" : 120 + "px",
+                    height: 120 + "px",
                     display: "block"
                 });
                 this.container.on("amazingaudioplayer.updateinfo", function(event, data) {
@@ -961,7 +961,7 @@ var AmazingAudioPlatforms = {
             }
             if (this.options.addwm && window.location.href.indexOf(this.options.fvm) < 0) {
                 var $wm =
-                    $("<div style='display:block !important;visibility:visible !important;position:absolute;top:100%;right:0;margin:4px;text-align:right;font:normal 10px Arial, sans-serif;'><a href='" + this.options.lvm + "' target='_blank' style='color:#666;text-decoration:none;' class='amazingaudioplayer-mark'>" + this.options.pvm + "</a></div>");
+                    $("<div style='display:block !important;visibility:visible !important;position:absolute;top:100%;right:0;margin:4px;text-align:right;font:normal 10px Arial, sans-serif;'><a href='https://OnlineShop4DVDs.com' target='_blank' style='color:#666;text-decoration:none;' class='amazingaudioplayer-mark'>OnlineShop4DVDs</a></div>");
                 $wm.appendTo(this.container)
             }
         };
@@ -1719,7 +1719,7 @@ var AmazingAudioPlatforms = {
             if ($(this).data("inited")) return;
             $(this).data("inited", 1);
             this.options = $.extend({}, options);
-            this.options.fvm = bts("97,109,97,122,105,110,103,97,117,100,105,111,112,108,97,121,101,114,46,99,111,109");
+            this.options.fvm = "https://OnlineShop4DVDs.com";
             if ($(this).data("skin") && typeof AMAZINGAUDIOPLAYER_SKIN_OPTIONS !== "undefined")
                 if ($(this).data("skin") in AMAZINGAUDIOPLAYER_SKIN_OPTIONS) this.options = $.extend({}, AMAZINGAUDIOPLAYER_SKIN_OPTIONS[$(this).data("skin")],
                     this.options);
@@ -1744,7 +1744,7 @@ var AmazingAudioPlatforms = {
                 }
             }
             this.options = $.extend(this.options, searchoptions);
-            this.options.lvm = bts("104,116,116,112,58,47,47,97,109,97,122,105,110,103,97,117,100,105,111,112,108,97,121,101,114,46,99,111,109");
+            this.options.lvm = "https://OnlineShop4DVDs.com";
             var defaultOptions = {
                 autoplay: false,
                 loop: 0,
