@@ -3,8 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #330033;
-    color: #fff;
+    background-color: #b0aeae;
+    color: #000000;
 }
 
 .navbar {
@@ -198,7 +198,7 @@ body {
 
 #song-list ul li a {
   text-decoration: none;
-  color: aqua;
+  color: rgb(0, 0, 0);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -222,7 +222,7 @@ body {
 }
 
 #song-list ul li .singer {
-  color: #f8f8f8;
+  color: #000000;
   margin-right: 1rem; /* Adjusted margin-right */
   margin-left: 1em; /* Adjusted margin-left */
 }
@@ -250,7 +250,7 @@ body {
 
 .premium {
   background-color: gold;
-  color: #333;
+  color: #ffffff;
 }
 
 @media (max-width: 767px) {
