@@ -283,6 +283,20 @@ body {
   }
 }
 
+.add-favorite-btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Make the button width equal to the lyrics pad width */
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
