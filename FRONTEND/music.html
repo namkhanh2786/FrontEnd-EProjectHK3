@@ -4,16 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUSIC - OnlineShop4DVD</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="/css/music.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <!-- Audio Section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="modal fade" id="lyricsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                (Verse 1)
+                In the moonlit night, where shadows dance,
+                Whispers of a love, in a fleeting trance.
+                Stars above, tell tales untold,
+                In the symphony of time, our story unfolds.
+                
+                (Chorus)
+                Eternal echo in the cosmic sea,
+                A love that binds, wild and free.
+                Hearts entwined in a timeless song,
+                Forever echoes, where we belong.
+                
+                (Verse 2)
+                Through the echoes of the ancient trees,
+                A melody floats in the gentle breeze.
+                Mountains high and valleys low,
+                In this timeless dance, our spirits glow.
+                
+                (Chorus)
+                Eternal echo in the cosmic sea,
+                A love that binds, wild and free.
+                Hearts entwined in a timeless song,
+                Forever echoes, where we belong.
+                
+                (Bridge)
+                In the tapestry of the endless night,
+                Our love ignites, a celestial light.
+                Through the galaxies, hand in hand,
+                A journey written in the shifting sand.
+                
+                (Verse 3)
+                Whispers of love in the morning dew,
+                Footprints of time, our rendezvous.
+                Sunsets paint a canvas so divine,
+                In this eternal echo, our souls entwine.
+                
+                (Chorus)
+                Eternal echo in the cosmic sea,
+                A love that binds, wild and free.
+                Hearts entwined in a timeless song,
+                Forever echoes, where we belong.
+                
+                (Outro)
+                As the stars bid farewell to the day,
+                Our love persists, it will never sway.
+                In the cosmic dance, a promise we keep,
+                Eternal echoes, in love so deep.
+            </div>
+            </div>
+        </div>
+    </div> 
 
     <div id="music-player">
       <div class="audio-player">
@@ -27,46 +94,87 @@
           </section>
           
           <section id="playlist">
-            <table id="playlist" class="no-select">
-              <thead>
-                <th>&nbsp;</th>
-                <th>Title</th>
-                <th>Artist</th>
-                <th>Album</th>
-                <th><span class="fa fa-clock-o"></span></th>
-              </thead>
-              <tbody></tbody>
+            <table id="playlist-table" class="no-select col-lg-8 col-md-8 col-sm-12">
+                <thead>
+                    <th>&nbsp;</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Type</th>
+                </thead>
+                <tbody></tbody>
             </table>
-          </section>
-          
-          <footer id="interactions", style="color: white;">
-            <div class="tracking-wrap">
-              <span class="song-current-time">--:--</span>
-              <input class="tracking-slider range" type="range" min="0" value="0" step="1">
-              <span class="song-length">--:--</span>
-            </div>
+            <section id="album_info" class="col-lg-4 col-md-4 col-sm-12">
+                <div id="album-image" class="col-12">
+                    <!-- Album image goes here -->
+                    <img src="https://images.genius.com/bacae5471acb7b1a4ef445c92e049848.1000x1000x1.jpg" alt="Album Art">
+                </div>
+                <div id="album-buttons" class="col-12">
+                    <div class="dropdown">
+                        <button id="dots-button" class="dots-button" data-bs-toggle="dropdown">&#8286;</button>
+                        <ul class="dropdown-menu" id="dr-item">
+                            <li>
+                                <div class="custom-checkbox btn btn-secondary" onclick="toggleFavorite()">
+                                    <input type="checkbox" id="id-of-input" hidden/>
+                                    <i class="glyphicon glyphicon-star"></i>
+                                    <span>Add to Favorite</span>
+                                </div>  
+                            </li>
+                            <hr>
+                            <li><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#lyricsModal">
+                                View Lyrics</button></li>
+                        </ul>
+                    </div>
+                    <script>
+                        function toggleFavorite() {
+                            var checkbox = document.querySelector('.custom-checkbox input[type="checkbox"]');
+                            var starIcon = document.querySelector('.custom-checkbox .glyphicon-star');
+                            var isChecked = checkbox.checked;
             
-            <div class="controls-bar">
-              <section id="controls">
-                <span class="fa fa-random shuffle"></span>
-                <span class="fa fa-fast-backward previous"></span>
-                <span class="fa fa-play play-pause"></span>
-                <span class="fa fa-fast-forward next"></span>
-                <span class="fa fa-repeat repeat on"></span>
-              </section>
-              
-              <div id="volume">
-                <span class="fa fa-volume-down"></span>
-                <input class="volume-slider range" type="range" max="1" min="0" step="0.01" value="0.8">
-                <span class="fa fa-volume-up"></span>
-              </div>
-            </div>
-          </footer>
+                            if (isChecked) {
+                                // If already favorited, remove the 'favorited' class and update star icon style
+                                checkbox.checked = false;
+                                starIcon.style.opacity = 0;
+                                alert("Removed from Favorites");
+                            } else {
+                                // If not favorited, add the 'favorited' class and update star icon style
+                                checkbox.checked = true;
+                                starIcon.style.opacity = 1;
+                                alert("Added to Favorites");
+                            }
+                        }
+                    </script>
+                </div>
+            </section>
+        </section>      
           
-          <audio id="player"></audio>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
-      <script>
+        <footer id="interactions", style="color: white;">
+        <div class="tracking-wrap">
+            <span class="song-current-time">--:--</span>
+            <input class="tracking-slider range" type="range" min="0" value="0" step="1">
+            <span class="song-length">--:--</span>
+        </div>
+        
+        <div class="controls-bar">
+            <section id="controls">
+            <span class="fa fa-random shuffle"></span>
+            <span class="fa fa-fast-backward previous"></span>
+            <span class="fa fa-play play-pause"></span>
+            <span class="fa fa-fast-forward next"></span>
+            <span class="fa fa-repeat repeat on"></span>
+            </section>
+            
+            <div id="volume">
+            <span class="fa fa-volume-down"></span>
+            <input class="volume-slider range" type="range" max="1" min="0" step="0.01" value="0.8">
+            <span class="fa fa-volume-up"></span>
+            </div>
+        </div>
+        </footer>
+          
+        <audio id="player"></audio>
+    </div>
+    <script>
         'use strict';
 
         /**
@@ -148,7 +256,7 @@
         {
             title: 'Lost On You',
             artist: 'LP',
-            duration: 268,
+            duration: 0,
             album: {
             title: 'Lost On You',
             art: {
@@ -162,7 +270,7 @@
         {
             title: 'Bad Liar',
             artist: 'Selena Gomez',
-            duration: 215,
+            duration: 0,
             album: {
             title: 'Bad Liar',
             art: {
@@ -175,7 +283,7 @@
         {
             title: 'Shape of You',
             artist: 'Ed Sheeran',
-            duration: 233,
+            duration: 0,
             album: {
             title: '÷ (Divide)',
             art: {
@@ -188,7 +296,7 @@
         {
             title: 'Ride',
             artist: 'Twentry One Pilots',
-            duration: 215,
+            duration: 0,
             album: {
             title: 'Blurryface',
             art: {
@@ -201,7 +309,7 @@
         {
             title: 'Set Fire to the Rain',
             artist: 'Adele',
-            duration: 242,
+            duration: 0,
             album: {
             title: '21',
             art: {
@@ -214,7 +322,7 @@
         {
             title: 'Girl on Fire',
             artist: 'Alicia Keys',
-            duration: 225,
+            duration: 0,
             album: {
             title: 'Girl on Fire',
             art: {
@@ -227,7 +335,7 @@
         {
             title: 'Swing, Swing',
             artist: 'The All American Rejects',
-            duration: 233,
+            duration: 0,
             album: {
             title: 'The All-American Rejects',
             art: {
@@ -240,7 +348,7 @@
         {
             title: 'Jamie All Over',
             artist: 'Mayday Parade',
-            duration: 216,
+            duration: 0,
             album: {
             title: 'A Lesson in Romantics',
             art: {
@@ -253,7 +361,7 @@
         {
             title: 'Titanium',
             artist: 'David Guetta ft. Sia',
-            duration: 245,
+            duration: 0,
             album: {
             title: 'Nothing but the Beat',
             art: {
@@ -264,6 +372,31 @@
             url: `${archiveBase}/azeplaylist/David%20Guetta%20feat.%20Sia%20-%20Titanium.mp3`,
         },
         ];
+        // Function to get the duration of a song asynchronously
+        async function getSongDuration(url) {
+            const response = await fetch(url);
+            const buffer = await response.arrayBuffer();
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            return new Promise(resolve => {
+                audioContext.decodeAudioData(buffer, (audioBuffer) => {
+                    const duration = audioBuffer.duration;
+                    resolve(duration);
+                });
+            });
+        }
+
+        // Loop through each song and get the duration
+        songList.forEach(async (song) => {
+            const duration = await getSongDuration(song.url);
+            // Update the duration in seconds
+            song.duration = Math.round(duration);
+        });
+
+        // Add a delay or use a callback to ensure the asynchronous operations complete before using the duration
+        setTimeout(() => {
+            console.log(songList);
+        }, 2000); // You may need to adjust the delay based on the size of your audio files and network speed
 
         /**
          * Based on the class list for a given element toggle the class(es) received.
@@ -625,63 +758,63 @@
          * Build the playlist from the give array of songs.
          */
         function buildPlaylist() {
-        // Add the songs to the dom
-        let html = '';
-        songList.forEach((song, index) => {
-            html += `
-                <tr data-index="${index}">
-                <td class="play-pause"><img src="${song.album.art.square}"></td>
-                <td>${song.title}</td>
-                <td>${song.artist}</td>
-                <td>${song.album.title}</td>
-                <td>${secondsToHms(song.duration)}</td>
-                </tr>
-                `;
-            });
-        playlistBody.innerHTML = html;
+            // Add the songs to the dom
+            let html = '';
+            songList.forEach((song, index) => {
+                html += `
+                        <tr data-index="${index}">
+                            <td class="play-pause"><img src="${song.album.art.square}"></td>
+                            <td>${song.title}</td>
+                            <td>${song.artist}</td>
+                            <td>${song.album.title}</td>
+                            <td><span class="premium-badge">Premium</span></td>
+                        </tr>
+                    `;
+                });
+            playlistBody.innerHTML = html;
 
-        // Update the list items
-        listItems = document.querySelectorAll('#playlist tbody tr');
-        playlistPlay = document.querySelectorAll('#playlist .play-pause');
+            // Update the list items
+            listItems = document.querySelectorAll('#playlist tbody tr');
+            playlistPlay = document.querySelectorAll('#playlist .play-pause');
 
-        // Add event listeners to the list items
-        for (const listItem of listItems) {
-            listItem.addEventListener('click', (event) => {
-            const songIndex = event.target.parentElement.dataset.index;
-            controls.updateSong(songIndex);
+            // Add event listeners to the list items
+            for (const listItem of listItems) {
+                listItem.addEventListener('click', (event) => {
+                const songIndex = event.target.parentElement.dataset.index;
+                controls.updateSong(songIndex);
 
-            if (controls.playing) {
-                controls.play();
+                if (controls.playing) {
+                    controls.play();
+                }
+                });
+
+                listItem.addEventListener('dblclick', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (!controls.playing) {
+                    controls.playPause();
+                }
+                });
             }
-            });
 
-            listItem.addEventListener('dblclick', (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-
-            if (!controls.playing) {
-                controls.playPause();
+            for (const playlistPlayButton of playlistPlay) {
+                playlistPlayButton.addEventListener('click', (event) => {
+                if (!controls.playing) {
+                    controls.playPause();
+                }
+                });
             }
-            });
-        }
-
-        for (const playlistPlayButton of playlistPlay) {
-            playlistPlayButton.addEventListener('click', (event) => {
-            if (!controls.playing) {
-                controls.playPause();
             }
-            });
-        }
-        }
 
 
-        // Initiate the setup.
-        window.onload = () => {
-        buildPlaylist();
-        controls.updateSong();
-        controls.adjustVolume();
+            // Initiate the setup.
+            window.onload = () => {
+            buildPlaylist();
+            controls.updateSong();
+            controls.adjustVolume();
         };
-      </script>
+    </script>
       <!-- <div id="lyrics-and-list">
           <div id="lyrics", class="col-lg-8 col-md-12 col-sm-12">
               <div class="custom-checkbox btn btn-primary" onclick="toggleFavorite()">

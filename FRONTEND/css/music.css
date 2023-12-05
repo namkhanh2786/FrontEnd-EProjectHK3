@@ -289,3 +289,62 @@ body {
   width: 10vw;
   margin: 0 1vw;
 }
+
+#album_info {
+  margin-top: 2%;
+}
+
+#album-image img {
+  width: 100%;
+}
+
+#album-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.dots-button {
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+}
+
+.dropdown-menu a {
+  color: #000000;
+}
+
+/* Styling for Lyrics Modal */
+.modal-dialog {
+  margin-right: 20px; /* Adjust the margin-right value as needed */
+}
+
+.modal-body {
+  padding: 20px;
+  margin-right: 20%;
+  float: left;
+}
+
+/* Remove header and footer from the modal */
+.modal-header,
+.modal-footer {
+  display: none;
+}
+
+#dr-item{
+  border-radius: 10%;
+  text-align: center;
+}
+
+/* Add this to your existing styles or create a new style section */
+
+.premium-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FFD700; /* Gold color */
+  color: #000000; /* Black text color */
+  border-radius: 3px;
+}
