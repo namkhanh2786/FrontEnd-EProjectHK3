@@ -296,6 +296,7 @@ body {
 
 #album-image img {
   width: 100%;
+  border-radius: 5%;
 }
 
 #album-buttons {
@@ -306,7 +307,7 @@ body {
 
 .dots-button {
   border-radius: 50%;
-  padding: 5px 10px;
+  padding: 1px 10px;
 }
 
 .dropdown-menu {
@@ -347,4 +348,79 @@ body {
   background-color: #FFD700; /* Gold color */
   color: #000000; /* Black text color */
   border-radius: 3px;
+}
+
+.fa-heart{
+  color: plum;
+}
+
+.fa-heart-o{
+  color: aliceblue;
+}
+
+#album-name{
+  font-size: 2vw;
+  color: darkblue;
+}
+
+#album-addtocart
+{
+  margin-right: 50%;
+}
+
+.addtocart {
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 100px;
+  border: none;
+  font-size: 2em;
+  position: relative;
+  background: #0652DD;
+  cursor: pointer;
+  height: 2em;
+  width: 10em;
+  overflow: hidden;
+  transition: transform 0.1s;
+  z-index: 1;
+}
+
+.addtocart:hover {
+  transform: scale(1.1);
+}
+
+#album-addtocart {
+  margin: auto;
+  text-align: center;
+}
+
+.pretext {
+  color: #fff;
+  background: #0ddd06;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+
+.done {
+  background: #be2edd;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translate(-110%) skew(-40deg);
+}
+
+.posttext {
+  background: #be2edd;
+}
+
+.fa-check {
+  background: #be2edd;
 }

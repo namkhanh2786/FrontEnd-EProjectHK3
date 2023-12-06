@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/album.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xx+J5F4W8knx32cj9T2B8zrD4yEW1woA0ry0Qbu8iZvkeH5DIJLQJ6dLQnEvnZKtqaaPAAZaYMOhx0K4X/PkQw==" crossorigin="anonymous" />
+
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add jQuery and Bootstrap JS links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Include jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <section class="album-catagory section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text" class="input-search" placeholder="Type to Search...">
+                </div>
+            </div>
+            <script src="/js/album.js"></script>
+            <div class="hrbar col-lg-12 col-md-12 col-sm-12">
+                <h4>Newly Released</h4>
+                <br>
+                <hr>
+                <br>
+            </div>
+            <div class="container">
+                <div id="albumCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row oneMusic-albums">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>The Cure</h5>
+                                            </a>
+                                            <p>Second Song</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row oneMusic-albums">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>The Cure</h5>
+                                            </a>
+                                            <p>Second Song</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#albumCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#albumCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br> <br>
+            <div class="hrbar col-lg-12 col-md-12 col-sm-12">
+                <h4>Your Favorites</h4>
+                <br>
+                <hr>
+                <br>
+            </div>
+            <div class="container">
+                <div id="albumCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row oneMusic-albums">
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row oneMusic-albums">
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 single-album-item">
+                                    <div class="single-album">
+                                        <img src="https://th.bing.com/th/id/OIP.Pm_3Sb_qnXvu-oKuE5b2fwHaHa?pid=ImgDet&w=191&h=191&c=7&dpr=1.5" alt="">
+                                        <div class="album-info">
+                                            <a href="#">
+                                                <h5>DJ SMITH</h5>
+                                            </a>
+                                            <p>The Album</p>
+                                        </div>
+                                        <div class="play-button">
+                                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" height="2.7vw" width="2.7vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                            <a href="#" class=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="2.7vw" height="2.7vw" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="white"></path> </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#albumCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#albumCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>            
+            <br> <br>
+            <div class="hrbar col-lg-12 col-md-12 col-sm-12">
+                <h4>Top Songs</h4>
+                <br>
+                <hr>
+                <br>
+            </div>
+            <div class="container">
+                <div class="row oneMusic-albums">
+                    <div id="songCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song" data-index="0">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="#" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="#" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="#" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="#" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4 col-sm-12">
+                                        <div class="single-song">
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1422a851072267.5608a20c60456.jpg" alt="">
+                                            <div class="play-button">
+                                                <a href="#" class="play-btn"><svg xmlns="http://www.w3.org/2000/svg" height="3vw" width="3vw" viewBox="0 0 384 512"><path fill="#ffffff" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></a>
+                                                <span class="premium-badge">Premium</span>
+                                                <audio src="#" hidden></audio>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#songCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#songCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>                                                 
+        </div>
+    </section>
+    <footer>
+        <div id="app-cover">
+            <div id="bg-artwork"></div>
+            <div id="bg-layer"></div>
+            <div id="player">
+            <div id="player-track">
+                <div id="album-name"></div>
+                <div id="track-name"></div>
+                <div id="track-time">
+                <div id="current-time"></div>
+                <div id="track-length"></div>
+                </div>
+                <div id="s-area">
+                <div id="ins-time"></div>
+                <div id="s-hover"></div>
+                <div id="seek-bar"></div>
+                </div>
+            </div>
+            <div id="player-content">
+                <div id="album-art">
+                <img src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg" class="active" id="_1">
+                <div id="buffer-box">Buffering ...</div>
+                </div>
+                <div id="player-controls">
+                <div class="control">
+                    <div class="button" id="play-previous">
+                    <i class="fas fa-backward"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="button" id="play-pause-button">
+                    <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="button" id="play-next">
+                    <i class="fas fa-forward"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var playerFooter = $("footer");
+                var playButtons = $(".play-button a");
+                var audio = new Audio();
+                var trackUrl = [];
+                var albums = [];
+                var trackNames = [];
+                var albumArtworks = [];
+
+                playButtons.on("click", function (e) {
+                    e.preventDefault();
+                    var songElement = $(this).closest(".single-song");
+                    var audioElement = songElement.find("audio")[0];
+
+                    if (audioElement) {
+                        var audioSrc = audioElement.src;
+
+                        // Check if the audio is paused
+                        if (audio.paused) {
+                            // If paused, play it
+                            audio.src = audioSrc;
+                            audio.play();
+                            playerFooter.addClass("active");
+
+                            // Add the audio source to the trackUrl array
+                            trackUrl.push(audioSrc);
+
+                            // Add album details
+                            var albumIndex = songElement.data("index");
+                            albums.push(albumsList[albumIndex]);
+                            trackNames.push(trackNamesList[albumIndex]);
+                            albumArtworks.push(albumArtworksList[albumIndex]);
+
+                            // Display current album details
+                            displayAlbumDetails(albumIndex);
+                        } else {
+                            // If playing, pause it
+                            audio.pause();
+                            playerFooter.removeClass("active");
+                        }
+                    } else {
+                        console.error("Audio element not found");
+                    }
+                });
+
+                function displayAlbumDetails(index) {
+                    // Update your UI elements with the current album details
+                    albumName.text(albums[index]);
+                    trackName.text(trackNames[index]);
+
+                    // You might need to adapt this based on your specific HTML structure
+                    albumArt.find("img.active").removeClass("active");
+                    $("#" + albumArtworks[index]).addClass("active");
+
+                    bgArtworkUrl = $("#" + albumArtworks[index]).attr("src");
+                    bgArtwork.css({ "background-image": "url(" + bgArtworkUrl + ")" });
+                }
+
+                playerFooter.draggable();
+
+                $(document).on("click", function (e) {
+                    if (!$(e.target).closest("footer").length) {
+                        playerFooter.removeClass("active");
+                        audio.pause();
+                    }
+                });
+        
+                var playerTrack = $("#player-track"),
+                    bgArtwork = $("#bg-artwork"),
+                    bgArtworkUrl,
+                    albumName = $("#album-name"),
+                    trackName = $("#track-name"),
+                    albumArt = $("#album-art"),
+                    sArea = $("#s-area"),
+                    seekBar = $("#seek-bar"),
+                    trackTime = $("#track-time"),
+                    insTime = $("#ins-time"),
+                    sHover = $("#s-hover"),
+                    playPauseButton = $("#play-pause-button"),
+                    i = playPauseButton.find("i"),
+                    tProgress = $("#current-time"),
+                    tTime = $("#track-length"),
+                    seekT,
+                    seekLoc,
+                    seekBarPos,
+                    cM,
+                    ctMinutes,
+                    ctSeconds,
+                    curMinutes,
+                    curSeconds,
+                    durMinutes,
+                    durSeconds,
+                    playProgress,
+                    bTime,
+                    nTime = 0,
+                    buffInterval = null,
+                    tFlag = false,
+                    playPreviousTrackButton = $("#play-previous"),
+                    playNextTrackButton = $("#play-next"),
+                    currIndex = -1;
+        
+                function playPause() {
+                    setTimeout(function () {
+                        if (audio.paused) {
+                            playerTrack.addClass("active");
+                            albumArt.addClass("active");
+                            checkBuffering();
+                            i.attr("class", "fas fa-pause");
+                            audio.play();
+                        } else {
+                            playerTrack.removeClass("active");
+                            albumArt.removeClass("active");
+                            clearInterval(buffInterval);
+                            albumArt.removeClass("buffering");
+                            i.attr("class", "fas fa-play");
+                            audio.pause();
+                        }
+                    }, 300);
+                }
+        
+                function showHover(event) {
+                    seekBarPos = sArea.offset();
+                    seekT = event.clientX - seekBarPos.left;
+                    seekLoc = audio.duration * (seekT / sArea.outerWidth());
+        
+                    sHover.width(seekT);
+        
+                    cM = seekLoc / 60;
+        
+                    ctMinutes = Math.floor(cM);
+                    ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+        
+                    if (ctMinutes < 0 || ctSeconds < 0) return;
+        
+                    if (ctMinutes < 0 || ctSeconds < 0) return;
+        
+                    if (ctMinutes < 10) ctMinutes = "0" + ctMinutes;
+                    if (ctSeconds < 10) ctSeconds = "0" + ctSeconds;
+        
+                    if (isNaN(ctMinutes) || isNaN(ctSeconds)) insTime.text("--:--");
+                    else insTime.text(ctMinutes + ":" + ctSeconds);
+        
+                    insTime.css({ left: seekT, "margin-left": "-21px" }).fadeIn(0);
+                }
+        
+                function hideHover() {
+                    sHover.width(0);
+                    insTime.text("00:00").css({ left: "0px", "margin-left": "0px" }).fadeOut(0);
+                }
+        
+                function playFromClickedPos() {
+                    audio.currentTime = seekLoc;
+                    seekBar.width(seekT);
+                    hideHover();
+                }
+        
+                function updateCurrTime() {
+                    nTime = new Date();
+                    nTime = nTime.getTime();
+        
+                    if (!tFlag) {
+                        tFlag = true;
+                        trackTime.addClass("active");
+                    }
+        
+                    curMinutes = Math.floor(audio.currentTime / 60);
+                    curSeconds = Math.floor(audio.currentTime - curMinutes * 60);
+        
+                    durMinutes = Math.floor(audio.duration / 60);
+                    durSeconds = Math.floor(audio.duration - durMinutes * 60);
+        
+                    playProgress = (audio.currentTime / audio.duration) * 100;
+        
+                    if (curMinutes < 10) curMinutes = "0" + curMinutes;
+                    if (curSeconds < 10) curSeconds = "0" + curSeconds;
+        
+                    if (durMinutes < 10) durMinutes = "0" + durMinutes;
+                    if (durSeconds < 10) durSeconds = "0" + durSeconds;
+        
+                    if (isNaN(curMinutes) || isNaN(curSeconds)) tProgress.text("00:00");
+                    else tProgress.text(curMinutes + ":" + curSeconds);
+        
+                    if (isNaN(durMinutes) || isNaN(durSeconds)) tTime.text("00:00");
+                    else tTime.text(durMinutes + ":" + durSeconds);
+        
+                    if (
+                        isNaN(curMinutes) ||
+                        isNaN(curSeconds) ||
+                        isNaN(durMinutes) ||
+                        isNaN(durSeconds)
+                    )
+                        trackTime.removeClass("active");
+                    else trackTime.addClass("active");
+        
+                    seekBar.width(playProgress + "%");
+        
+                    if (playProgress == 100) {
+                        i.attr("class", "fa fa-play");
+                        seekBar.width(0);
+                        tProgress.text("00:00");
+                        albumArt.removeClass("buffering").removeClass("active");
+                        clearInterval(buffInterval);
+                    }
+                }
+        
+                function checkBuffering() {
+                    clearInterval(buffInterval);
+                    buffInterval = setInterval(function () {
+                        if (nTime == 0 || bTime - nTime > 1000) albumArt.addClass("buffering");
+                        else albumArt.removeClass("buffering");
+        
+                        bTime = new Date();
+                        bTime = bTime.getTime();
+                    }, 100);
+                }
+        
+                function selectTrack(flag) {
+                    if (flag == 0 || flag == 1) ++currIndex;
+                    else --currIndex;
+        
+                    if (currIndex > -1 && currIndex < albumArtworks.length) {
+                        if (flag == 0) i.attr("class", "fa fa-play");
+                        else {
+                            albumArt.removeClass("buffering");
+                            i.attr("class", "fa fa-pause");
+                        }
+        
+                        seekBar.width(0);
+                        trackTime.removeClass("active");
+                        tProgress.text("00:00");
+                        tTime.text("00:00");
+        
+                        currAlbum = albums[currIndex];
+                        currTrackName = trackNames[currIndex];
+                        currArtwork = albumArtworks[currIndex];
+        
+                        audio.src = trackUrl[currIndex];
+        
+                        nTime = 0;
+                        bTime = new Date();
+                        bTime = bTime.getTime();
+        
+                        if (flag != 0) {
+                            audio.play();
+                            playerTrack.addClass("active");
+                            albumArt.addClass("active");
+        
+                            clearInterval(buffInterval);
+                            checkBuffering();
+                        }
+        
+                        albumName.text(currAlbum);
+                        trackName.text(currTrackName);
+                        albumArt.find("img.active").removeClass("active");
+                        $("#" + currArtwork).addClass("active");
+        
+                        bgArtworkUrl = $("#" + currArtwork).attr("src");
+        
+                        bgArtwork.css({ "background-image": "url(" + bgArtworkUrl + ")" });
+                    } else {
+                        if (flag == 0 || flag == 1) --currIndex;
+                        else ++currIndex;
+                    }
+                }
+        
+                function initPlayer() {
+                    selectTrack(0);
+        
+                    audio.loop = false;
+        
+                    playPauseButton.on("click", playPause);
+        
+                    sArea.mousemove(function (event) {
+                        showHover(event);
+                    });
+        
+                    sArea.mouseout(hideHover);
+        
+                    sArea.on("click", playFromClickedPos);
+        
+                    $(audio).on("timeupdate", updateCurrTime);
+        
+                    playPreviousTrackButton.on("click", function () {
+                        selectTrack(-1);
+                    });
+                    playNextTrackButton.on("click", function () {
+                        selectTrack(1);
+                    });
+                }
+        
+                initPlayer();
+            });
+        </script>     
+    </footer>
+</body>
+</html>
